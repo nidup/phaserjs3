@@ -93,24 +93,6 @@ const config = {
 class SimpleGame extends Phaser.Game {
     constructor(config) {
         super(config);
-        /*
-        super(
-            1200,
-            800,
-            Phaser.CANVAS,
-            'content',
-            null
-        );*
-
-        */
-        //this.antialias = false;
-        /*
-                this.state.add('Boot', Boot);
-                this.state.add('Preload', Preload);
-                this.state.add('Menu', Menu);
-                this.state.add('Play', Play);
-                this.state.start('Boot');
-          */
     }
 }
 window.onload = () => {
@@ -146162,7 +146144,7 @@ class MainScene extends Phaser.Scene {
         });
     }
     preload() {
-        this.load.image("logo", "../assets/sprites/hero.png");
+        this.load.image("logo", "../assets/palette/bkd32.png");
     }
     create() {
         this.phaserSprite = this.add.sprite(400, 300, "logo");
